@@ -5,4 +5,6 @@ export interface Validations {
   hasUpperCases?: () => RegExp;
 }
 
-export interface PasswordFieldProps {}
+export interface PasswordFieldProps {
+  validations: Validations;
+}

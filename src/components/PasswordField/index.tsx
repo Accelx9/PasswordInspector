@@ -1,6 +1,6 @@
-import React from "react";
+import { PasswordFieldProps } from "./interfaces";
 
-const PasswordField = () => {
+const PasswordField = ({ validations }: PasswordFieldProps) => {
   return <div>PasswordField</div>;
 };
 
