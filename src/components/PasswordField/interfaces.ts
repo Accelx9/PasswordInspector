@@ -1,10 +1,11 @@
-export interface Validations {
-  hasConsecutiveLetters?: () => RegExp;
-  hasNumbers?: () => RegExp;
-  hasSpecialCharacters?: () => RegExp;
-  hasUpperCases?: () => RegExp;
-}
+type Validations = {
+  validator: (value: string) => boolean;
+  description: string;
+}[];
 
 export interface PasswordFieldProps {
   validations: Validations;
+  containerClassNames?: string;
+  fieldClassNames?: string;
+  listClassNames?: string;
 }

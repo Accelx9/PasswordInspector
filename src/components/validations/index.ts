@@ -1,15 +1,19 @@
-export const hasNumberRegex = () => {
-  return /[0-9]/;
+export const hasNumbers = (value: string) => {
+  return /[0-9]/.test(value);
 };
 
-export const hasSpecialCharRegex = () => {
-  return /[!@#$%^&*()_+{}[\]:;<>,.?~\\/-]/;
+export const hasSpecialCharacters = (value: string) => {
+  return /[!@#$%^&*()_+{}[\]:;<>,.?~\\/-]/.test(value);
 };
 
-export const hasUpperCaseRegex = () => {
-  return /[A-Z]/;
+export const hasUpperCases = (value: string) => {
+  return /[A-Z]/.test(value);
 };
 
-export const hasConsecutiveLettersRegex = () => {
-  return /[a-zA-Z]{2,}/;
+export const hasConsecutiveLetters = (value: string) => {
+  return !/[a-zA-Z]{2,}/.test(value);
+};
+
+export const hasConsecutiveNumbers = (value: string) => {
+  return !/[0-9]{2,}/.test(value);
 };
