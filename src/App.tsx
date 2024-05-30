@@ -1,11 +1,11 @@
 import PasswordField from "./components/PasswordField";
 import {
-  hasConsecutiveLetters,
-  hasConsecutiveNumbers,
+  hasNoConsecutiveLetters,
+  hasNoConsecutiveNumbers,
   hasNumbers,
   hasSpecialCharacters,
   hasUpperCases,
-} from "./components/validations";
+} from "./utils/validations";
 
 function App() {
   return (
@@ -26,11 +26,7 @@ function App() {
           },
           {
             description: "Doesn't have consecutive letters",
-            validator: hasConsecutiveLetters,
-          },
-          {
-            description: "Doesn't have consecutive numbers",
-            validator: hasConsecutiveNumbers,
+            validator: hasNoConsecutiveLetters,
           },
         ]}
       />

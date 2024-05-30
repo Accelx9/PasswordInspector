@@ -27,17 +27,19 @@ const PasswordField = ({
         name="passwordField"
         className={`${fieldClassNames}`}
         onChange={handleChangePassword}
+        role="textInput"
       />
       <ul className={`${styles.validations_list} ${listClassNames} `}>
         {validations?.map(({ description, validator }, index) => (
           <li
+            role="listItem"
             className={`${styles.validations_list_item} ${listItemClassNames}`}
             key={index}
           >
             <img
               src={validator(password) ? CheckSVG : WrongSVG}
               className={`${styles.validator_image}`}
-              alt="Check validation"
+              alt="Check validation image"
             />
             {description}
           </li>
