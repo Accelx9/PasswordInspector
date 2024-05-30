@@ -3,6 +3,7 @@ import {
   hasConsecutiveLetters,
   hasConsecutiveNumbers,
   hasNumbers,
+  hasSpecialCharacters,
   hasUpperCases,
 } from "./components/validations";
 
@@ -18,6 +19,10 @@ function App() {
           {
             description: "Has numbers",
             validator: hasNumbers,
+          },
+          {
+            description: "Has special characters",
+            validator: hasSpecialCharacters,
           },
           {
             description: "Doesn't have consecutive letters",

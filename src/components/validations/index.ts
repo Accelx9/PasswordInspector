@@ -11,9 +11,11 @@ export const hasUpperCases = (value: string) => {
 };
 
 export const hasConsecutiveLetters = (value: string) => {
+  if (!value) return false;
   return !/[a-zA-Z]{2,}/.test(value);
 };
 
 export const hasConsecutiveNumbers = (value: string) => {
+  if (!value) return false;
   return !/[0-9]{2,}/.test(value);
 };
