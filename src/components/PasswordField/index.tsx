@@ -1,11 +1,15 @@
 import { useState } from "react";
 import { PasswordFieldProps } from "./interfaces";
+import styles from "./PasswordField.module.css";
+import CheckSVG from "../../assets/Check.svg";
+import WrongSVG from "../../assets/Wrong.svg";
 
 const PasswordField = ({
   validations,
   containerClassNames,
   fieldClassNames,
   listClassNames,
+  listItemClassNames,
 }: PasswordFieldProps) => {
   const [password, setPassword] = useState("");
 
@@ -14,7 +18,9 @@ const PasswordField = ({
   };
 
   return (
-    <div className={`${containerClassNames}`}>
+    <div
+      className={` ${styles.password_field_container} ${containerClassNames}`}
+    >
       <input
         type="password"
         value={password}
@@ -22,10 +28,18 @@ const PasswordField = ({
         className={`${fieldClassNames}`}
         onChange={handleChangePassword}
       />
-      <ul className={`${listClassNames}`}>
+      <ul className={`${styles.validations_list} ${listClassNames} `}>
         {validations?.map(({ description, validator }, index) => (
-          <li key={index}>
-            {description} {validator(password) ? "✅" : "❌"}
+          <li
+            className={`${styles.validations_list_item} ${listItemClassNames}`}
+            key={index}
+          >
+            <img
+              src={validator(password) ? CheckSVG : WrongSVG}
+              className={`${styles.validator_image}`}
+              alt="Check validation"
+            />
+            {description}
           </li>
         ))}
       </ul>

@@ -8,4 +8,5 @@ export interface PasswordFieldProps {
   containerClassNames?: string;
   fieldClassNames?: string;
   listClassNames?: string;
+  listItemClassNames?: string;
 }
