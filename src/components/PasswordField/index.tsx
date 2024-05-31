@@ -4,7 +4,7 @@ import styles from "./PasswordField.module.css";
 import CheckSVG from "../../assets/Check.svg";
 import WrongSVG from "../../assets/Wrong.svg";
 
-const PasswordField = ({
+export const PasswordField = ({
   validations,
   containerClassNames,
   fieldClassNames,
@@ -48,5 +48,3 @@ const PasswordField = ({
     </div>
   );
 };
-
-export default PasswordField;

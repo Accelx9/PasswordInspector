@@ -1,37 +1,19 @@
-import PasswordField from "./components/PasswordField";
-import {
-  hasNoConsecutiveLetters,
-  hasNoConsecutiveNumbers,
-  hasNumbers,
-  hasSpecialCharacters,
-  hasUpperCases,
-} from "./utils/validations";
+// export default App;
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { Demo, SignUp } from "./pages";
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <SignUp />,
+  },
+  {
+    path: "/Demo",
+    element: <Demo />,
+  },
+]);
 
 function App() {
-  return (
-    <>
-      <PasswordField
-        validations={[
-          {
-            description: "Has uppercase",
-            validator: hasUpperCases,
-          },
-          {
-            description: "Has numbers",
-            validator: hasNumbers,
-          },
-          {
-            description: "Has special characters",
-            validator: hasSpecialCharacters,
-          },
-          {
-            description: "Doesn't have consecutive letters",
-            validator: hasNoConsecutiveLetters,
-          },
-        ]}
-      />
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
