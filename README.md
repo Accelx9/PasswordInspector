@@ -68,6 +68,12 @@ Clone the project
   git clone https://github.com/Accelx9/PasswordInspector
 ```
 
+Ensure to have node 20.10.0 or above
+
+```bash
+  node -v
+```
+
 Go to the project directory
 
 ```bash
