@@ -29,13 +29,13 @@ Then pass it to the component as a prop in the list of validations
 />
 ```
 
-| Parameter             | Type                                                       | Description                                              |
-| :-------------------- | :--------------------------------------------------------- | :------------------------------------------------------- |
-| validations           | `{description:string; validator:(value:string)=>boolean;}` | **Required**. Your list of validations                   |
-| `containerClassNames` | `string`                                                   | **Required**. Styling for the container of the component |
-| `fieldClassNames`     | `string`                                                   | **Required**. Styling for the text input                 |
-| `listClassNames`      | `string`                                                   | **Required**. Styling for the list of validations        |
-| `listItemClassNames`  | `string`                                                   | **Required**. Styling for each item of the list          |
+| Parameter             | Type                                                         | Description                                |
+| :-------------------- | :----------------------------------------------------------- | :----------------------------------------- |
+| `validations`         | `{description:string; validator:(value:string)=>boolean;}[]` | **Required**. Your list of validations     |
+| `containerClassNames` | `string`                                                     | Styling for the container of the component |
+| `fieldClassNames`     | `string`                                                     | Styling for the text input                 |
+| `listClassNames`      | `string`                                                     | Styling for the list of validations        |
+| `listItemClassNames`  | `string`                                                     | Styling for each item of the list          |
 
 ## How would I improve stuff all around the project?
 
