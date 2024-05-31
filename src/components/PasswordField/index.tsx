@@ -18,7 +18,7 @@ export const PasswordField = ({
   };
 
   return (
-    <div
+    <article
       className={` ${styles.password_field_container} ${containerClassNames}`}
     >
       <input
@@ -28,8 +28,12 @@ export const PasswordField = ({
         className={`${fieldClassNames}`}
         onChange={handleChangePassword}
         role="textInput"
+        aria-label="Insert your password"
       />
-      <ul className={`${styles.validations_list} ${listClassNames} `}>
+      <ul
+        aria-label="Validation list"
+        className={`${styles.validations_list} ${listClassNames} `}
+      >
         {validations?.map(({ description, validator }, index) => (
           <li
             role="listItem"
@@ -45,6 +49,6 @@ export const PasswordField = ({
           </li>
         ))}
       </ul>
-    </div>
+    </article>
   );
 };

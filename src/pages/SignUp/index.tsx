@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 export const SignUp = () => {
   return (
     <Fragment>
-      <div className={styles.form}>
+      <main className={styles.form}>
         <div className={styles.padding_horizontal__48}>
           <span className={styles.padding_bottom__15}>
             Sign up in Password Inspector an learn about password security!
@@ -73,8 +73,8 @@ export const SignUp = () => {
             </div>
           </form>
         </div>
-      </div>
-      <div className={`${styles.footer_link} ${styles.padding_top__24}`}>
+      </main>
+      <footer className={`${styles.footer_link} ${styles.padding_top__24}`}>
         <span>
           Already have an account? <a href="">Sign in</a>
         </span>
@@ -94,7 +94,7 @@ export const SignUp = () => {
             <a href="#">Privacy & terms</a>
           </span>
         </div>
-      </div>
+      </footer>
     </Fragment>
   );
 };
