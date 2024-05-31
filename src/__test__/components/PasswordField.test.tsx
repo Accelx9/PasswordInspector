@@ -3,7 +3,7 @@ import userEvent from "@testing-library/user-event";
 import { describe, expect, it } from "vitest";
 import CheckSVG from "../../assets/Check.svg";
 import WrongSVG from "../../assets/Wrong.svg";
-import PasswordField from "../../components/PasswordField";
+import { PasswordField } from "../../components";
 import {
   hasNumbers,
   hasSpecialCharacters,
