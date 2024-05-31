@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="159.97072mm"
+   height="156.57919mm"
+   viewBox="0 0 159.97072 156.57919"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-233.11516,132.5859)">
+    <rect
+       style="fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:10.0981;stroke-dasharray:none;stroke-opacity:1"
+       id="rect16"
+       width="70.988998"
+       height="80.343422"
+       x="251.8737"
+       y="-126.79376"
+       ry="25.220161" />
+    <g
+       id="g13"
+       transform="translate(108.35761,-122.73017)">
+      <path
+         id="path8"
+         style="fill:#000000;stroke-width:1.31708"
+         d="M 178.92603,-9.8557292 A 40.940782,40.940782 0 0 0 138.0324,30.425533 h 7.66052 a 33.285189,33.285189 0 0 1 33.23311,-32.6259155 33.285189,33.285189 0 0 1 33.23363,32.6259155 h 7.66051 A 40.940782,40.940782 0 0 0 178.92603,-9.8557292 Z" />
+      <path
+         id="rect12"
+         style="fill:#000000;stroke-width:4.65996"
+         d="m 138.03033,30.370329 0.005,27.475489 h 7.50755 l 0.15636,-27.489395 z m 74.13024,-0.0028 0.14688,27.478265 h 7.50756 V 30.370301 Z" />
+    </g>
+    <rect
+       style="fill:#f2f2f2;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-dasharray:none;stroke-opacity:1"
+       id="rect13"
+       width="101.33542"
+       height="63.764584"
+       x="236.61516"
+       y="-66.638496"
+       ry="5.953125" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:14.1489;stroke-dasharray:none;stroke-opacity:1"
+       id="path14"
+       cx="287.28287"
+       cy="-34.756207"
+       r="8.8867121" />
+    <g
+       id="g15"
+       transform="translate(107.43884,-127.83112)"
+       style="fill:#f2f2f2;fill-opacity:1">
+      <rect
+         style="fill:#f2f2f2;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-dasharray:none;stroke-opacity:1"
+         id="rect15"
+         width="21.960417"
+         height="66.145836"
+         x="70.750435"
+         y="234.74294"
+         ry="5.953125"
+         transform="rotate(-47.565787)" />
+      <circle
+         style="fill:#f2f2f2;fill-opacity:1;stroke:#000000;stroke-width:5.64332;stroke-dasharray:none;stroke-opacity:1"
+         id="circle15"
+         cx="211.66666"
+         cy="83.87291"
+         r="20.690495" />
+    </g>
+  </g>
+</svg>
